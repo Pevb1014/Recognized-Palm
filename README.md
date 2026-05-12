@@ -16,6 +16,9 @@ npm install
 npm run dev
 ```
 
+> ⚠️ Esta app usa módulos TypeScript gestionados por Vite. No abras `index.html` directamente con un servidor estático genérico; usa `npm run dev` o una build (`npm run build` + `npm run preview`).
+
+
 ## Build de producción
 ```bash
 npm run build

@@ -1,0 +1,67 @@
+# Recognized Palm
+
+Aplicación web frontend para reconocimiento y tracking de manos en tiempo real con React + TypeScript + Vite + MediaPipe Tasks Vision.
+
+## Requisitos
+- Node.js 20+
+- npm 10+
+
+## Instalación
+```bash
+npm install
+```
+
+## Ejecución local
+```bash
+npm run dev
+```
+
+## Build de producción
+```bash
+npm run build
+npm run preview
+```
+
+## Deploy en GitHub Pages
+1. Configura el repositorio en GitHub.
+2. Ejecuta:
+```bash
+npm run deploy
+```
+3. Publicará el contenido de `dist/` usando `gh-pages`.
+
+## Variables de entorno
+Copia `.env.example` como `.env` si quieres ajustar rutas del modelo/wasm.
+
+## Características
+- Solicitud de permisos de cámara.
+- Detección en tiempo real de hasta 2 manos.
+- Dibujo de landmarks y conexiones sobre canvas sincronizado.
+- Handedness (Left/Right).
+- FPS aproximados y panel de estado.
+- Botones de pausar/reanudar cámara.
+- Manejo de errores de cámara/tracking.
+- UI responsive de estilo futurista.
+
+## Arquitectura
+- `src/app`: providers, rutas y configuración.
+- `src/core`: cámara, rendimiento y motor de visión desacoplado.
+- `src/features/hand-tracking`: hooks, servicios, componentes y tipos de la feature.
+- `src/shared`: componentes y utilidades reutilizables.
+- `src/pages`: páginas de composición.
+- Carpetas complementarias solicitadas: `src/services`, `src/adapters`, `src/utils`, `tests`, `config`, `scripts`, `docs`, `data`, `assets`.
+
+## Extensibilidad futura
+Base preparada para:
+- Reconocimiento de gestos (`core/vision/gestures`).
+- Integración con Three.js / WebGL.
+- AR, objetos 3D y tatuajes virtuales.
+- Control de interfaz por mano.
+
+## Stack
+- React 18
+- TypeScript estricto
+- Vite
+- @mediapipe/tasks-vision
+- CSS moderno
+

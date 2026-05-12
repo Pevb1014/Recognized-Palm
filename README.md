@@ -1,4 +1,4 @@
-# Recognized Palm
+# Recognized Palm.
 
 Aplicación web frontend para reconocimiento y tracking de manos en tiempo real con React + TypeScript + Vite + MediaPipe Tasks Vision.
 

@@ -26,12 +26,16 @@ npm run preview
 ```
 
 ## Deploy en GitHub Pages
-1. Configura el repositorio en GitHub.
-2. Ejecuta:
+### Opción A (recomendada): GitHub Actions
+1. En GitHub, activa **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+2. Haz push a `main`.
+3. El workflow `.github/workflows/deploy.yml` construye `dist` y publica la web automáticamente.
+
+### Opción B (manual)
 ```bash
 npm run deploy
 ```
-3. Publicará el contenido de `dist/` usando `gh-pages`.
+Publica `dist/` con `gh-pages`.
 
 ## Variables de entorno
 Copia `.env.example` como `.env` si quieres ajustar rutas del modelo/wasm.
